@@ -2,7 +2,8 @@ from django.template import Template, Context, loader
 from django.http import HttpResponse
 from django.contrib import admin
 from datetime import datetime
-from AppTurnos.models import Datos_profesionales
+from .AppTurnos.models import Datos_profesionales, Horarios_profesionales, meses, pacientes
+
 
 
 def saludar(request):
