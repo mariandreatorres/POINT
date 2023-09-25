@@ -16,11 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import saludar, hoy, pantalla_1
+from AppTurnos.models import Datos_profesionales, Horarios_profesionales, meses, pacientes 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', saludar),
-    path('fechahoy/',hoy),
-    path('principal/', pantalla_1),
+    path('profesionales/', Datos_profesionales),
 ]
