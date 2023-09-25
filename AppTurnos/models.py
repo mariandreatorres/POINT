@@ -20,7 +20,7 @@ class meses(models.Model):
     periodo = models.CharField(default="202301", max_length=10)
     id_profesional = models.ForeignKey
     fecha = models.DateField(default=datetime.date.today)
-    hora = models.DateTimeField(default=datetime.time.today)   
+    hora = models.DateTimeField(default=datetime.datetime.now) 
 
 class pacientes(models.Model):
     id_pacientes = models.AutoField(primary_key=True)
