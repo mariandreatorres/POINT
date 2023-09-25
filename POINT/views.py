@@ -30,16 +30,6 @@ def pantalla_1(request):  ###prueba
 	documento_1 = plantilla.render(profesionales)
 	return HttpResponse(documento_1)
 
-class Dat_profesionales:
 
-    def __init__(self, id_cliente, nombre, apellido, mail, cuit, razon_social, gerencia_asignada):
-        self.id_cliente = id_cliente
-        self.nombre = nombre
-        self.apellido = apellido
-        self.mail = mail
-        self.cuit = cuit
-        self.razon_social = razon_social
-        self.gerencia_asignada = gerencia_asignada
-    
     
 
