@@ -16,13 +16,13 @@ class Horarios_profesionales(models.Model):
     hora_inicio = models.CharField(default="",max_length=10)
     hora_fin = models.CharField(default="",max_length=10)
 
-class meses(models.Model):
+class Meses(models.Model):
     periodo = models.CharField(default="202301", max_length=10)
     id_profesional = models.ForeignKey
     fecha = models.DateField(default=datetime.date.today)
     hora =models.DateTimeField(default=datetime.datetime.now) 
 
-class pacientes(models.Model):
+class Pacientes(models.Model):
     id_pacientes = models.AutoField(primary_key=True)
     nombre = models.CharField(default="",max_length=60)
     apellido = models.CharField(default="",max_length=60)

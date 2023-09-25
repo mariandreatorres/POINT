@@ -1,12 +1,15 @@
 from django.template import Template, Context, loader
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib import admin
 from datetime import datetime
-from AppTurnos.models import Datos_profesionales, Horarios_profesionales, meses, pacientes
+from AppTurnos.models import Datos_profesionales, Horarios_profesionales, Meses, Pacientes
+
+def inicio(request):
+	return HttpResponse("Esta es la vista de bienvenida")
 
 def profesionales(request):  ###prueba
-	valor_1 = Datos_profesionales (nombre_profesionales="Mariana", 
+	valor_1 = Datos_profesionales (nombre="Mariana", 
 		 apellido ="Torres",
     	 mail = "mariandreatorres@gmail.com",
 		 cuit = '27223707489',
