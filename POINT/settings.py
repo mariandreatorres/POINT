@@ -54,7 +54,7 @@ ROOT_URLCONF = 'POINT.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/cti0716/Python/PreEntrega3_Mariana_Torres/POINT/POINT/plantillas/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
