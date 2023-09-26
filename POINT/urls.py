@@ -21,7 +21,7 @@ from AppTurnos.views import *
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('AppTurnos/', include('AppTurnos.urls'))
+#    path('admin/', admin.site.urls),
+#    path('AppTurnos/', include('AppTurnos.urls'))
     
 ]
